@@ -126,6 +126,8 @@ class _CircleBottomNavigationState extends State<CircleBottomNavigation>
     super.initState();
     if(widget.initialSelection != null) {
       _setSelected(widget.tabs[widget.initialSelection].key);
+    } else {
+      setState((){});
     }
   }
 
